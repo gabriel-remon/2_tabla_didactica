@@ -1,11 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="inicio"></app-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-button (click)="singOut()">
-    cerrar secion
-  </ion-button>
+
+  <div class="ion-text-center ">
+    <ion-button (click)="ingles()">
+      ingles
+    </ion-button  >
+    <ion-button  (click)="espanol()">
+      español
+    </ion-button>
+    <ion-button (click)="portugues()">
+      portugues
+    </ion-button>
+  </div>
+
+  <div class="ion-text-center">
+    <ion-button  (click)="colores()">
+      colores
+    </ion-button >
+    <ion-button (click)="numeros()">
+      numeros
+    </ion-button>
+    <ion-button (click)="animales()" >
+      animales
+    </ion-button>
+  </div>
+  <div >
+
+    <app-boton class="alejartop"
+    [idioma]="idioma"
+    ></app-boton>
+
+  </div>
+
+  <div class="ion-text-center">
+    <ion-button (click)="singOut()" class="exit">
+      cerrar sesion
+    </ion-button>
+
+  </div>
 </ion-content>

@@ -25,9 +25,21 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+ion-toolbar{
+    --background : #343434;
+    --color : #54fa94
+}
 ion-button {
     text-transform: none;
+    
 }
+
+ion-button{
+    --background: #343434;
+    --color: #54fa94;
+    --border-color: #343434;
+}
+
 
 // safe padding for ios
 .safe-p-bottom{
@@ -128,4 +140,8 @@ ion-button {
     .add-update-modal {
         --height: 680px;
     }
+}
+@font-face{
+    font-family: campana;
+    src: url('./theme/Campana.otf');
 }

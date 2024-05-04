@@ -7,9 +7,22 @@ const routes: Routes = [
   {
     path: '',
     component: MainPage
-  },  {
+  },
+  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'colores',
+    loadChildren: () => import('./colores/colores.module').then( m => m.ColoresPageModule)
+  },
+  {
+    path: 'numeros',
+    loadChildren: () => import('./numeros/numeros.module').then( m => m.NumerosPageModule)
+  },
+  {
+    path: 'animales',
+    loadChildren: () => import('./animales/animales.module').then( m => m.AnimalesPageModule)
   }
 
 ];

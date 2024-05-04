@@ -1,0 +1,23 @@
+ion-button{
+    margin: 10px 10px 10px 10px ;
+    height: 30px;
+    width: 100px;
+}
+.exit{
+margin-top: 40px;
+    width: 300px;
+}
+@media screen and (orientation: landscape) {
+    /* Agrega aquí tus estilos específicos para la posición horizontal */
+    ion-button{
+        margin: 10px 10px 10px 10px ;
+        height: 20px;
+        width: 220px;
+    }
+    .exit{
+        width: 700px;
+    }
+    .alejartop{
+        margin-top: 10px;
+    }
+  }

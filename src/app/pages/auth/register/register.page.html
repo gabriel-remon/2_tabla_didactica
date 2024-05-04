@@ -6,8 +6,7 @@
 
         <form [formGroup]="form" class="auth-form" (ngSubmit)="submit()" (keypress.enter)="submit()">
             
-            <app-logo></app-logo>
-
+            
             <app-custom-input 
             icon="person-outline" 
             label="nombre" 
@@ -51,6 +50,7 @@
                 Registro
                 <ion-icon slot="end" name="person-add-outline"></ion-icon>
             </ion-button>
+            <app-logo></app-logo>
 
             
 

@@ -6,7 +6,7 @@
 
         <form [formGroup]="form" class="auth-form" (ngSubmit)="submit()" (keypress.enter)="submit()">
             
-            <app-logo></app-logo>
+            
 
             <app-custom-input 
             icon="mail-outline" 
@@ -34,8 +34,29 @@
                 <div *ngIf="form.controls.password.errors?.['minlength']"> deve tener al menos 5 caracteres</div> 
             </div>
 
+            <app-logo></app-logo>
+
             <p class="ion-text-end" routerLink="forgot-password"> ¿olvidaste tu contraseña?</p>
 
+            <div class="d-flex-center">
+                <p ><strong>acceso rapido</strong></p>
+            </div>
+            <div class="d-flex-center">
+                
+                  <ion-button (click)="acceso1()" class="boton-custom" >
+                    <ion-icon slot="start" name="man-outline"></ion-icon>
+                    person 1
+                  </ion-button>
+                  <ion-button (click)="acceso2()" class="boton-custom" >
+                    <ion-icon slot="start" name="man-outline"></ion-icon>
+                    person 2
+                  </ion-button>
+                  <ion-button (click)="acceso3()" class="boton-custom" >
+                    <ion-icon slot="start" name="man-outline"></ion-icon>
+                    person 3
+                  </ion-button>
+            
+            </div>
             <ion-button  expand="block" mode="ios" type="submit" class="submit" [disabled]="form.invalid">
                 Ingresar
                 <ion-icon slot="end" name="log-in-outline"></ion-icon>
@@ -47,19 +68,5 @@
             </ion-button>
 
         </form>
-    </div>
-    <div class="d-flex-center">
-        <p >botones de acceso rapido</p>
-    </div>
-    <div class="d-flex-center">
-        <ion-button (click)="acceso1()" class="boton-custom">
-            usuario 1
-          </ion-button>
-        <ion-button (click)="acceso2()" class="boton-custom">
-            usuario 2
-          </ion-button>
-        <ion-button (click)="acceso3()" class="boton-custom">
-            usuario 3
-          </ion-button>
     </div>
 </ion-content>

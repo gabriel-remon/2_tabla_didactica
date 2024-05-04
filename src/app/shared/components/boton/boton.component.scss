@@ -1,0 +1,38 @@
+
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .elemento {
+    width: 150px; /* Tamaño del div redondo */
+    height: 150px; /* Tamaño del div redondo */
+    border-radius: 50%; /* Hace que el div sea redondo */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    margin-right: 10px; /* Espacio entre los divs */
+    background-color: #343434;
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; 
+  margin: 10px 10px 10px 10px ;
+  }
+  
+  .imagen {
+    width: 130px; /* Tamaño de la imagen */
+    height: 130px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+  }
+  
+  @media screen and (orientation: landscape) {
+    /* Agrega aquí tus estilos específicos para la posición horizontal */
+    .elemento {
+        width: 100px; /* Ajusta el tamaño del botón según sea necesario */
+        height: 100px
+    }
+    .imagen {
+      width: 80px; /* Tamaño de la imagen */
+      height: 80px; /* Tamaño de la imagen */
+    }
+  }
+  
