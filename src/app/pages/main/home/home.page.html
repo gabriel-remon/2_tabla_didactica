@@ -1,42 +1,61 @@
-<app-header titulo="inicio"></app-header>
-
 
 <ion-content [fullscreen]="true">
 
-  <div class="ion-text-center ">
-    <ion-button (click)="ingles()">
-      ingles
-    </ion-button  >
-    <ion-button  (click)="espanol()">
-      español
-    </ion-button>
-    <ion-button (click)="portugues()">
-      portugues
-    </ion-button>
-  </div>
 
-  <div class="ion-text-center">
-    <ion-button  (click)="colores()">
-      colores
-    </ion-button >
-    <ion-button (click)="numeros()">
-      numeros
-    </ion-button>
-    <ion-button (click)="animales()" >
-      animales
-    </ion-button>
-  </div>
-  <div >
+  <ion-fab>
+    <ion-fab-button>
+      <img src={{srcIdioma}} alt="">
+    </ion-fab-button>
 
-    <app-boton class="alejartop"
+    <ion-fab-list side="end">
+      <ion-fab-button>
+        <img src="assets/banderas/inglesa.jpg" alt="" (click)="ingles()">
+      </ion-fab-button>
+
+      <ion-fab-button>
+        <img src="assets/banderas/argentina.jpg" alt="" (click)="espanol()" >
+      </ion-fab-button>
+      
+      <ion-fab-button>
+        <img src="assets/banderas/brasil.jpg" alt="" (click)="portugues()" >
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab horizontal="end">
+    <ion-fab-button>
+      <img src={{srcTipo}} alt="">
+    </ion-fab-button>
+
+    <ion-fab-list side="start">
+      <ion-fab-button>
+        <img src="assets/colores/colores.png" alt="" (click)="colores()">
+      </ion-fab-button>
+
+      <ion-fab-button>
+        <img src="assets/numeros/numeros.jpg" alt="" (click)="numeros()" >
+      </ion-fab-button>
+      
+      <ion-fab-button>
+        <img src="assets/animales/animales.png" alt="" (click)="animales()" >
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  
+ 
+
+  <div class="alejartop">
+
+    <app-boton
     [idioma]="idioma"
     ></app-boton>
 
   </div>
 
-  <div class="ion-text-center">
-    <ion-button (click)="singOut()" class="exit">
-      cerrar sesion
+  <div class="ion-text-end">
+    <ion-button (click)="singOut()" class="exit" >
+      <ion-icon slot="start" name="sad-outline"></ion-icon>
     </ion-button>
 
   </div>

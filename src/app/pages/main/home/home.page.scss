@@ -1,23 +1,71 @@
 ion-button{
-    margin: 10px 10px 10px 10px ;
     height: 30px;
     width: 100px;
 }
 .exit{
-margin-top: 40px;
-    width: 300px;
+    margin-top: 0px;
+    width: 50px;
+    align-items: center;
+    --background: red;
+    --color: #343434;
+    
 }
+
+.seleccionado{
+    --background: #54fa94;
+    --color: #343434;
+    --border-color: #54fa94;
+}
+ion-icon{
+    --color: #343434
+    --border-color: #343434
+    --background: #343434;
+}
+.alejartop{
+    margin-top: 50px;
+}
+
+#opciones {
+    position: absolute;
+    top: 40px; /* Ajusta la posición vertical según tu diseño */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100; /* Asegura que se superponga a otros elementos */
+    display: none; /* Inicialmente oculto */
+  }
+  
+  .opciones-desplegadas.show {
+    display: block; /* Muestra las opciones al hacer clic */
+  }
+
+  ion-fab-button {
+    --background: black;
+
+    --border-radius: 15px;
+    --box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.3);
+
+  }
+
 @media screen and (orientation: landscape) {
     /* Agrega aquí tus estilos específicos para la posición horizontal */
     ion-button{
-        margin: 10px 10px 10px 10px ;
-        height: 20px;
-        width: 220px;
+        margin: 5px ;
+        margin-top: 0;
+        margin-right: 5px ;
+        margin-left: 5px;
+        height: 5px;
+        width: 190px;
     }
-    .exit{
-        width: 700px;
+    img{
+        width: 220px;
+        height: 46px;
+    }
+     .exit{
+        width: 50px;
+        height: 5px;
     }
     .alejartop{
-        margin-top: 10px;
+        margin-top: 70px;
     }
   }
